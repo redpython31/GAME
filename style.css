@@ -54,6 +54,8 @@ html{
 
 body{ 
     background-image: var(--gradient-bg-main);
+    background-repeat: no-repeat;
+    background-position: center;
     font-size: var(--font-16px);
     text-align: center;
     
@@ -157,7 +159,9 @@ a{
     height: fit-content;
     background: transparent;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    column-gap: 20px;
+    flex-wrap: wrap;
     
 }
 
@@ -183,6 +187,16 @@ a{
     background-color:var(--transparent-bg-secondary) ;
     border-radius: var(--border-radius-hover);
     box-shadow:0px 5px 40px  rgb(170, 170, 170) ;
+}
+
+
+.game-container-box-inside-number:nth-child(2){
+    background: none;
+    box-shadow: none;
+    font-family: var(--font-all);
+    font-size: var(--font-16px);
+    font-weight: 400;
+
 }
 
 .game-container-box-inside-number:focus,
