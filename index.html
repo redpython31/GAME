@@ -37,17 +37,18 @@
 
             <div class="game-container-box">
                 <div class="game-container-box-inside">
-                    <label for="random-number">Hidden Number</label> <br>
+                    <h2>Hidden Number</h2> <br>
                    <p id="random-number" class="game-container-box-inside-number">?</p>
                 </div>
-                <p class="game-container-box-inside-number">Let's play.</p>
+
+                <p id="resultScreen" class="game-container-box-inside-number">Let's play.</p>
+                
                 <div class="game-container-box-inside">
-                    <label for="guess-number">Enter 1-100.</label> <br>
+                    <h2>Enter 1-100.</h2> <br>
                     <input class="game-container-box-inside-number" type="number" id="input-number">
                 </div>
             </div>
-
-            <button type="submit" class="game-container-submit">Submit</button>
+            <button type="submit" class="game-container-submit" onclick="validateInput()">Submit</button>
         </form>
     </main>
     <footer class="sitemap">
