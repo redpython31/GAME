@@ -15,7 +15,7 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=login" />
 </head>
 
-<body>
+<body id="main-body">
     <header class="main-head">
         <div class="main-head-logo"><a href="index.html"><img src="/asset/images/logo.png" alt="Website-Logo"></a></div>
         <nav class="main-head-navbar">
@@ -32,28 +32,29 @@
         </button>
     </header>
     <main class="game-container">
-            <h1 class="game-container-quote">Play More, Win More</h1>
+        <h1 class="game-container-quote">Play More, Win More</h1>
         <form action="#" method="get" id="user-input">
 
             <div class="game-container-box">
                 <div class="game-container-box-inside">
                     <h2>Hidden Number</h2> <br>
-                   <p id="random-number" class="game-container-box-inside-number">?</p>
+                    <p id="random-number" class="game-container-box-inside-number">?</p>
                 </div>
 
                 <p id="resultScreen" class="game-container-box-inside-number">Let's play.</p>
-                
+
                 <div class="game-container-box-inside">
                     <h2>Enter 1-100.</h2> <br>
-                    <input class="game-container-box-inside-number" type="number" id="input-number">
+                    <input class="game-container-box-inside-number" type="text" id="input-number">
                 </div>
             </div>
             <button type="submit" class="game-container-submit" onclick="validateInput()">Submit</button>
         </form>
     </main>
     <footer class="sitemap">
-       <p class="sitemap-info">&copy; 2025 Gusse The Number All right resereved.</p>
+        <p class="sitemap-info">&copy; 2025 Gusse The Number All right resereved.</p>
     </footer>
 </body>
 <script src="script.js"></script>
+
 </html>s
