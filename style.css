@@ -191,7 +191,13 @@ a {
     border: none;
     outline: none;
     line-height: 250px;
+<<<<<<< HEAD
     background-color: var(--transparent-bg-secondary);
+=======
+    overflow: hidden;
+    white-space: nowrap;
+    background-color:var(--transparent-bg-secondary) ;
+>>>>>>> c964ae2 ( code updated)
     border-radius: var(--border-radius-hover);
     box-shadow: 0px 5px 40px rgb(170, 170, 170);
 }
