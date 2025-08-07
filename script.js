@@ -1,12 +1,13 @@
 // ======= DOM Elements ===========
 let displayGuess = document.getElementById("random-number"); // Box to display the random number when guessed correctly
 let displayResult = document.getElementById("resultScreen"); // Screen to display result messages (like "Too High", "Too Low", etc.)
-// let dark = document.getElementById("btn-dark");              // Dark mode toggle button (if used)
-// let main = document.getElementById("main-body");             // Main body element to change theme
-
+let resetButton = document.getElementById("reset-btn");
 // ======= Generate Random Number (1 to 100) ===========
-let random = Math.floor(Math.random() * 100 + 1); // Generates a new random number between 1 and 100
-
+const generateRandom = ()=> {
+    let number = Math.floor(Math.random() * 100 + 1); // Generates a new random number between 1 and 100
+    return number;
+}
+let random = generateRandom();
 // ======= Function: Validate User Input ===========
 const validateInput = () => {
     let userInput = document.getElementById("input-number").value; // Get input from user
@@ -17,7 +18,6 @@ const validateInput = () => {
         displayResult.innerText = "Please enter a number ?";
         return; // Exit function if input is not a number
     }
-
     // Validate that input is in range (1 to 100)
     if (userInput >= 1 && userInput <= 100) {
         console.log("Number is valid");
@@ -40,7 +40,7 @@ const compareNumber = (userInput, random) => {
         displayResult.style.fontWeight = "600";
         displayGuess.innerText = random; // Reveal the random number
         displayGuess.style.background = "green";
-        resetGame();
+        // resetGame(userInput, random);
     } else if (random < userInput) {
         // User guessed too high
         console.log("Number is greater");
@@ -60,6 +60,9 @@ const compareNumber = (userInput, random) => {
     }
 };
 // ======= Function: Reset when user Guessed the number ===========
-const resetGame = () =>{
-        
+const resetGame = (userInput,random) =>{
+ if(userInput == random)
+    generateRandom(); 
+    userInput = "";
+    
 };
