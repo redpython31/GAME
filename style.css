@@ -3,7 +3,6 @@ html {
 }
 
 :root {
-
   /* PRIMARY COLOR */
 
   --primary-blue: rgb(0, 123, 255);
@@ -86,7 +85,6 @@ html {
   --trns-effect: all 0.2s ease-in-out;
 
   /* ============START CSS================ */
-  
 }
 * {
   margin: 0;
@@ -101,7 +99,7 @@ ul {
   list-style: none;
 }
 
-p{
+p {
   font-family: var(--font-paragraph);
   font-size: var(--font-16px);
   font-weight: var(--font-regular);
@@ -114,7 +112,7 @@ a {
   text-decoration: none;
 }
 
-.wrapper{
+.wrapper {
   max-width: 132.6rem;
   margin-inline: 4rem;
   position: relative;
@@ -141,7 +139,6 @@ a {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
 }
 
 .main-header-navbar li {
@@ -160,7 +157,6 @@ a {
   /* background-color: red; */
 }
 
-
 .main-header-navbar-dropdown {
   position: relative;
   display: inline-block;
@@ -173,18 +169,17 @@ a {
   box-shadow: var(--box-shadow);
   z-index: 1000;
   display: none;
-  
 }
-.main-header-navbar-dropdown-content a{
+.main-header-navbar-dropdown-content a {
   font-family: var(--font-heading);
   font-size: var(--font-14px);
   font-weight: var(--font-regular);
-  
 }
 .main-header-navbar-dropdown:hover .main-header-navbar-dropdown-content {
   display: block;
 }
-.main-header-login , .btn{
+.main-header-login,
+.btn {
   font-family: var(--font-heading);
   font-size: var(--font-18px);
   font-weight: var(--font-regular);
@@ -202,9 +197,10 @@ a {
   background-color: var(--bg-hover-blue);
   color: var(--font-color-white);
 }
+/* Sign in or Sign up pages */
 
-.login{
-  display: flex;
+.login {
+  display: none;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -216,64 +212,67 @@ a {
   z-index: 2;
 }
 
-.login-info{
+.login-info {
   width: 35rem;
   height: 40rem;
-  background-color:var(--bg-color-white);
+  background-color: var(--bg-color-white);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.3rem;
   padding: 2rem;
   border-radius: 2rem;
-  border:2px solid var(--bg-color-lightgray);
+  border: 2px solid var(--bg-color-lightgray);
   overflow: hidden;
 }
 
-.login-info h2{
+.login-info h2 {
   font-family: var(--font-heading);
   font-size: var(--font-24px);
   text-align: center;
 }
 
-.login-info label{
+.login-info label {
   display: inline-block;
   font-family: var(--font-paragraph);
   font-size: var(--font-14px);
   font-weight: var(--font-mid);
   white-space: nowrap;
   padding-left: 0.5rem;
-  margin: 0.5rem 0;
-  
+  margin: 0.3rem 0;
 }
 
-.login-info input{
+.login-info input {
   width: 25rem;
   font-family: var(--font-paragraph);
   font-size: var(--font-16px);
   background-color: var(--bg-color-lightgray);
-  padding: 0.5rem;
+  padding:0.5rem  0.8rem;
   margin: 0.5rem;
-  border:none;
-  border-radius: 1rem;
+  border: none;
+  border-radius: 0.8rem;
 }
 
-.login-info form label:nth-of-type(3) input{
+.login-info form label:nth-of-type(3) input {
   width: 2rem;
 }
 
-.login-info-btn{
+
+.login-info-btn {
   display: block;
-  padding:0.8rem 5rem;
+  padding: 0.8rem 5rem;
   margin: 1rem auto;
 }
 
-.login-info p{
+.login-info p {
   font-size: var(--font-14px);
   font-weight: var(--font-mid);
 }
 
+.signUp {
+  display: flex;
+}
 /* ===============Main content======= */
 
 .hero-section {
@@ -285,13 +284,11 @@ a {
   flex-wrap: wrap;
   padding-top: 6rem;
   overflow: hidden;
-  
 }
 
-.hero-section-heading{
+.hero-section-heading {
   width: 60rem;
   height: auto;
-  
 }
 
 .hero-section-heading h1 {
@@ -301,46 +298,45 @@ a {
   color: var(--font-color-black);
   text-align: left;
   padding: 1rem;
-  
 }
 
-.hero-section-quote{
+.hero-section-quote {
   padding: 1rem;
   border-left: 0.5rem solid var(--primary-red);
   text-align: left;
   margin: 4rem 0;
 }
 
-.hero-section-image{
-    width: 60rem;
-    height: auto;
-    padding: 1rem;
+.hero-section-image {
+  width: 60rem;
+  height: auto;
+  padding: 1rem;
 }
 
-.hero-section-image img{
-   width: 100%;
-   height: auto;
-   object-fit: cover;
-   object-position: center;
-   border-radius: 2rem;
-   box-shadow: var(--box-shadow);
-   /* border: 2px solid var(--bg-color-darkgray); */
+.hero-section-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 2rem;
+  box-shadow: var(--box-shadow);
+  /* border: 2px solid var(--bg-color-darkgray); */
 }
 
-.hero-section-btn button{
+.hero-section-btn button {
   width: 20rem;
   height: 5.5rem;
-  margin: 0  2.5rem 2rem;
+  margin: 0 2.5rem 2rem;
   box-shadow: var(--box-shadow);
 }
 
-.hero-section-btn button:hover{
+.hero-section-btn button:hover {
   background-color: var(--bg-hover-blue);
   transform: scale(1.1);
-  color:var(--font-color-white)
+  color: var(--font-color-white);
 }
 
-.container{
+.container {
   width: 100%;
   height: auto;
   display: flex;
@@ -354,7 +350,6 @@ a {
   text-align: center;
   white-space: nowrap;
   margin: 6rem;
-  
 }
 
 .container-gameInfo {
@@ -369,11 +364,11 @@ a {
   overflow: hidden;
 }
 
-.container-gameInfo:nth-child(5){
+.container-gameInfo:nth-child(5) {
   border: none;
 }
 
-.container-gameInfo img{
+.container-gameInfo img {
   width: 20rem;
   height: auto;
   object-fit: cover;
@@ -387,19 +382,19 @@ a {
   margin-bottom: 2rem;
 }
 
-.container-gameInfo p{
+.container-gameInfo p {
   width: 55rem;
   height: auto;
   white-space: wrap;
 }
 
-.container-testimonial{
+.container-testimonial {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap ;
+  flex-wrap: wrap;
   gap: 4rem 8rem;
   overflow: hidden;
   padding: 2rem;
@@ -414,8 +409,8 @@ a {
   background-color: var(--tspt-primary-blue);
 }
 
-.container-testimonial-info img{
-  width:16rem;
+.container-testimonial-info img {
+  width: 16rem;
   height: auto;
   border-radius: 50%;
   object-fit: cover;
@@ -423,14 +418,14 @@ a {
   justify-self: center;
 }
 
-.container-testimonial-info h4{
+.container-testimonial-info h4 {
   font-family: var(--font-heading);
   font-size: var(--font-12px);
   text-align: center;
   margin: 1rem 0;
 }
 
-.container-testimonial-info p{
+.container-testimonial-info p {
   width: 16rem;
   height: auto;
   font-size: var(--font-12px);
@@ -439,13 +434,13 @@ a {
   padding: 0.5rem;
 }
 
-.foot-container{
+.foot-container {
   width: 100%;
   height: 40vh;
   background-color: var(--bg-color-darkgray);
 }
 
-.foot-container-box{
+.foot-container-box {
   width: 100%;
   height: 35vh;
   display: flex;
@@ -453,8 +448,8 @@ a {
   align-items: start;
 }
 
-.foot-container-box-info{
-   width: calc(100% / 4);
+.foot-container-box-info {
+  width: calc(100% / 4);
   height: 100%;
   display: flex;
   justify-content: start;
@@ -463,7 +458,7 @@ a {
   margin-top: 2rem;
 }
 
-.foot-container-box-info h4{
+.foot-container-box-info h4 {
   font-family: var(--font-paragraph);
   font-size: var(--font-16px);
   color: var(--font-color-white);
@@ -471,7 +466,7 @@ a {
   margin: 1rem 0 1.5rem 0;
 }
 
-.foot-container-box-info img{
+.foot-container-box-info img {
   width: 3.5rem;
   height: auto;
   object-fit: cover;
@@ -481,18 +476,17 @@ a {
   padding: 0.2rem;
 }
 
-.foot-container-box-info p{
- width: 80%;
- height: auto;
+.foot-container-box-info p {
+  width: 80%;
+  height: auto;
   font-family: var(--font-paragraph);
   font-size: var(--font-12px);
   font-weight: var(--font-light);
   color: var(--font-color-white);
   text-align: center;
-
 }
 
-.foot-container-box-info a{
+.foot-container-box-info a {
   font-family: var(--font-paragraph);
   font-size: var(--font-12px);
   font-weight: var(--font-light);
@@ -501,13 +495,13 @@ a {
   padding: 0.5rem 1.5rem;
 }
 
-.foot-container-box-info:nth-child(4) a{
+.foot-container-box-info:nth-child(4) a {
   display: inline-block;
   padding: 0;
   margin: 1rem;
 }
 
-.foot-container code{
+.foot-container code {
   width: 100%;
   font-family: var(--font-paragraph);
   font-size: var(--font-14px);
@@ -516,9 +510,6 @@ a {
   white-space: nowrap;
   display: block;
 }
-
-
-
 
 /* ===========Responsive========== */
 
