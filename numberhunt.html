@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test.com|CSS</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/numberhunt.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main-header">
+      <div class="main-header-logo">
+        <a href="/index.html"></a>
+      </div>
+      <nav class="main-header-navbar">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li class="main-header-navbar-dropdown">
+            <a href="#">Products</a>
+            <div class="main-header-navbar-dropdown-content">
+              <a href="/numberhunt.html">Number Hunt</a>
+              <a href="#">Tic Tac Toe</a>
+              <a href="#">Spin Wheel</a>
+              <a href="#">Millionaire</a>
+            </div>
+          </li>
+          <li><a href="#">Services</a></li>
+          <li class="main-header-navbar-dropdown"><a href="#">Contact</a></li>
+          <li><a href="/about.html">About us</a></li>
+        </ul>
+      </nav>
+      <button class="main-header-login">Login</button>
+    </div>
+
+    <!-- --------------Game------------------ -->
+
+    <main class="game centerBox">
+      <div class="game-console">
+        <h1>Number Hunt</h1>
+        <!-- <hr /> -->
+        <div class="game-console-align centerBox">
+          <div class="game-console-align-box centerBox">
+            <h2>Hidden Number</h2>
+            <p>?</p>
+          </div>
+          <div class="game-console-align-box centerBox">
+            <div class="game-console-align-box-hide">
+              <h2>Remaining time</h2>
+              <p>00:30</p>
+            </div>
+            <h2>Message</h2>
+            <p>show some thing</p>
+          </div>
+          <div class="game-console-align-box">
+            <h2>Mode</h2>
+            <button>
+              <img
+                src="/assets/images/countdown.png"
+                alt="Picture of countdown"
+              />
+            </button>
+            <button>
+              <img
+                src="/assets/images/stopwatch.png"
+                alt="Picture or stopwatch"
+              />
+            </button>
+            <button class="btn">Start</button>
+            <button class="btn">Restart</button>
+          </div>
+        </div>
+        <!-- <hr /> -->
+      </div>
+
+      <aside class="game-score"></aside>
+    </main>
+  </body>
+</html>
