@@ -86,11 +86,13 @@ html {
 
   /* ============START CSS================ */
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   background-color: #ffffff;
 }
@@ -170,14 +172,17 @@ a {
   z-index: 1000;
   display: none;
 }
+
 .main-header-navbar-dropdown-content a {
   font-family: var(--font-heading);
   font-size: var(--font-14px);
   font-weight: var(--font-regular);
 }
+
 .main-header-navbar-dropdown:hover .main-header-navbar-dropdown-content {
   display: block;
 }
+
 .main-header-login,
 .btn {
   font-family: var(--font-heading);
@@ -197,10 +202,12 @@ a {
   background-color: var(--bg-hover-blue);
   color: var(--font-color-white);
 }
+
 /* Sign in or Sign up pages */
 
 .login {
   display: none;
+  /* Default type is none always*/
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -248,7 +255,7 @@ a {
   font-family: var(--font-paragraph);
   font-size: var(--font-16px);
   background-color: var(--bg-color-lightgray);
-  padding:0.5rem  0.8rem;
+  padding: 0.5rem 0.8rem;
   margin: 0.5rem;
   border: none;
   border-radius: 0.8rem;
@@ -271,8 +278,10 @@ a {
 }
 
 .signUp {
-  display: flex;
+  display: none;
+  /*Default type is none always*/
 }
+
 /* ===============Main content======= */
 
 .hero-section {
@@ -514,6 +523,7 @@ a {
 /* ===========Responsive========== */
 
 @media screen and (max-width: 800px) {
+
   .main-header-navbar,
   .main-header-login {
     display: none;
